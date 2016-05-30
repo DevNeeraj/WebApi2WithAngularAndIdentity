@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AngularJSAuthentication/bin
+/AngularJSAuthentication/obj/Debug
+AngularJSAuthentication.API.Tests/bin
+AngularJSAuthentication.API.Tests/obj/Debug
+
