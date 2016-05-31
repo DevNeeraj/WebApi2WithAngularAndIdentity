@@ -79,5 +79,19 @@ namespace AngularJSAuthentication.Controllers
 
             return null;
         }
+
+
+        public async Task<IHttpActionResult> FindUser(string userName, string password)
+        {
+            var result = await _repo.FindUser(userName,password);
+            return Ok(result);
+        }
+
+        [Authorize]
+        [Route("GetName")]
+        public async Task<IHttpActionResult> GetName()
+        {
+            return Ok("neeraj");
+        }
     }
 }

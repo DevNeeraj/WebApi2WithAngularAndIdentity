@@ -87,7 +87,7 @@ namespace AngularJSAuthentication
             return _ctx.RefreshTokens.ToList();
         }
 
-        public async Task<IdentityUser> FindAsync(UserLoginInfo loginInfo)
+        public async Task<IdentityUser> FindUserFindAsync(UserLoginInfo loginInfo)
         {
             IdentityUser user = await _userManager.FindAsync(loginInfo);
 
